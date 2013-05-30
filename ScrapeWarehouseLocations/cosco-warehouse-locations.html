@@ -1,0 +1,1477 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Find a Costco warehouse</title>
+    
+    
+            <script type='text/javascript' src='http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2&mkt=en-US'></script>
+        <!-- BEGIN ClientSideIncludes.jspf --><!-- JVM encoding: ISO8859_1 -->
+
+
+
+<link rel="icon"  type="image/vnd.microsoft.icon" href="/wcsstore/CostcoGLOBALSAS/images/favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon"  type="image/vnd.microsoft.icon" href="/wcsstore/CostcoGLOBALSAS/images/favicon.ico" type="image/x-icon"> 
+
+<link rel="stylesheet" href="/dynamic_css?langId=-1&storeId=10301&catalogId=10701" type="text/css"/>
+<link rel="stylesheet" href="/wcsstore/CostcoGLOBALSAS/css/ui-lightness/jquery-ui-1.8.10.custom.css" type="text/css"/>
+
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/util.001.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery.cookie.js"></script>
+
+
+<script type="text/javascript" src="//www.costco.com/dynamicJs?langId=-1&storeId=10301&catalogId=10701"></script>
+
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/cleanup.js"></script>
+
+<!-- END ClientSideIncludes.jspf -->
+    <link rel="stylesheet" href="/wcsstore/CostcoGLOBALSAS/css/CostcoStoreLocator.css" type="text/css" media="screen" />
+</head>
+<body class="no-breadcrumbs">
+
+    
+<script>
+    mapToken = "Ao5ZqVFnjiL2fCfkgFfGZ8JpRX-ksJ0wbIckQ6HnVV0i9cG95H3Wh3lfKRaJE1wg";
+</script>
+
+    <div id="page">
+        <!-- BEGIN LayoutContainerTop.jspf --><!-- BEGIN HeaderDisplay.jspf --> 
+
+<a href="#" class="skipToMainContent">Skip to Main Content</a>
+<div id="top-navigation-wrap">
+    <div class="c1000">
+        <ul id="lob-navigation">
+            
+                <li><a href="http://www.costco.com/TopCategories?langId=-1&amp;storeId=10301&amp;catalogId=10701&amp;cm_re=Common-_-Top_Nav-_-Home">Shop</a></li>
+            
+                <li><a href="http://www2.costco.com/Browse/BDLanding.aspx?lang=en-US&amp;cm_re=Common-_-Top_Nav-_-Business_Delivery">Business Delivery</a></li>
+            
+                <li><a href="http://www2.costco.com/Service/FeaturePage.aspx?ProductNo=11486072&amp;cm_re=Common-_-Top_Nav-_-Pharmacy">Pharmacy</a></li>
+            
+                <li><a href="http://www.costco.com/services.html?cm_re=Common-_-Top_Nav-_-Services">Services</a></li>
+            
+                <li><a href="http://www.costcophotocenter.com/account/default.aspx">Photo</a></li>
+            
+                <li><a href="http://www.costcotravel.com?cm_re=Common-_-Top_Nav-_-Travel">Travel</a></li>
+            
+        </ul>
+
+        
+
+<div id="country-select">	
+    <a class="dropdown-link" href="#">
+        
+                <img class="flag" src="/wcsstore/CostcoGLOBALSAS/images/flags/US.png" alt="United States" />
+            
+    </a>
+    <ul class="dropdown dropdown-list">
+        <li><a href="http://www.costco.com"><img class="flag" src="/wcsstore/CostcoGLOBALSAS/images/flags/US.png" alt="United States" />United States</a></li>
+        <li><a href="http://www.costco.ca"><img class="flag" src="/wcsstore/CostcoGLOBALSAS/images/flags/CA.png" alt="Canada" />Canada</a></li>
+        <li><a href="http://www.costco.co.uk"><img class="flag" src="/wcsstore/CostcoGLOBALSAS/images/flags/UK.png" alt="United Kingdom" />United Kingdom</a></li>
+    </ul>
+</div>
+    
+    </div>
+</div>
+        
+<div id="header-wrap">
+    <div class="c1000">
+        <!DOCTYPE html>
+
+
+<html lang="en">
+
+<!-- BEGIN CachedHeaderDisplay.jsp --><!--  Defect #CIS100068720 Default Date Range calculation  --><!-- Defect CIS100068754 : Added locale variable --><!-- Section Ends --> 
+
+<div id="header" class="c1000">
+    <a class="header-logo" href="http://www.costco.com/?cm_re=Common-_-Top_Nav-_-Home" id="WC_CachedHeaderDisplay_Link_2"><img src="/wcsstore/CostcoGLOBALSAS/images/costco_wholesale_214_64.png" alt="Costco.com" /></a>
+    <ul id="header_links1" class="axs navigation">
+        <li>
+            <a href="http://www.costco.com/WarehouseLocatorView?langId=-1&amp;storeId=10301&amp;catalogId=10701&amp;cm_re=Common-_-Top_Nav-_-Locations" class="dropdown-link">Warehouse Locations</a>
+            <div class="dropdown warehouses">
+                <form action="WarehouseLocatorView" method="GET">
+                    <input type="hidden" id="catalogId" name="catalogId" value="10701" />
+                    <input type="hidden" id="langId" name="langId" value="-1" />
+                    <input type="hidden" id="storeId" name="storeId" value="10301" />
+                    <input type="hidden" id="fromWLocSubmit" name="fromWLocSubmit" value="true" />
+                    <div class="form-item-row">
+                        <div class="form-item">
+                            <label for="header_warehouseLocationsLocation">Location</label>
+                            <input style="width:220px" id="header_warehouseLocationsLocation" placeholder="City, State or Zip" title="Location" name="location" type="text" />
+                        </div>
+                        <div class="form-item">
+                            <label for="header_warehouseLocationsNum">Locations to display:</label>
+                            <select style="width: auto;" id="header_warehouseLocationsNum" name="numOfWarehouses" title="Locations to display:">
+                                <option value="5" selected="selected">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        You may optionally choose to filter your warehouse selection by selecting one or more of the below services.
+                        <ul class="checkbox-list warehouse-options-list">
+                            <li>
+                                <input id="hasGas" name="hasGas" type="checkbox" value="true" />
+                                <label class="gas-label" for="hasGas">Gas Station</label>
+                            </li>
+                            <li>
+                                <input id="hasHearing" name="hasHearing" type="checkbox" value="true"  />
+                                <label class="hearing-label" for="hasHearing">Hearing Aids</label>
+                            </li>
+                            <li>
+                                <input id="hasTires" name="hasTires" type="checkbox" value="true"  />
+                                <label class="tires-label" for="hasTires">Tire Center</label>
+                            </li>
+                            <li>
+                                <input id="hasPharmacy" name="hasPharmacy" type="checkbox" value="true"  />
+                                <label class="pharmacy-label" for="hasPharmacy">Pharmacy</label>
+                            </li>
+                            <li>
+                                <input id="hasFood" name="hasFood" type="checkbox" value="true"  />
+                                <label class="food-label" for="hasFood">Food Court</label>
+                            </li>
+                            <li>
+                                <input id="hasOptical" name="hasOptical" type="checkbox" value="true"  />
+                                <label class="optical-label" for="hasOptical">Optical Department</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-item submit-row">
+                        <button type="submit" class="submit">Find</button>
+                    </div>
+                </form>
+            </div>
+        </li>
+        <li>
+                <a class="dropdown-link" href="http://www.costco.com/membership-renewal.html?cm_re=Common-_-Top_Nav-_-Renew_Membership">Renew Membership</a>
+                <ul class="dropdown dropdown-list" id="header_renewMembership">
+                    <li><a href="http://www.costco.com/.product.31.html?cm_re=Common-_-Top_Nav-_-Renew_Membership">Gold Star Renewal</a></li>
+                    <li><a href="http://www.costco.com/.product.35674.html?cm_re=Common-_-Top_Nav-_-Renew_Membership">Executive Gold Star Renewal</a></li>
+                    <li><a href="http://www.costco.com/.product.67.html?cm_re=Common-_-Top_Nav-_-Renew_Membership&amp;mType=bus">Business Renewal</a></li>
+                    <li><a href="http://www.costco.com/.product.35676.html?cm_re=Common-_-Top_Nav-_-Renew_Membership&amp;mType=exBus">Executive Business Renewal</a></li>
+                </ul>
+        </li>
+           <li>
+            <a href="http://www.costco.com/join-costco.html?cm_re=Common-_-Top_Nav-_-Join_Now">Join Costco</a>
+        </li>
+        <li>
+            <span class="dropdown-link" tabindex="0">Email Sign-Up</span>
+            <div class="dropdown" style="width:218px;">
+                
+                <form title="" action="EmailSubscription?catalogId=10701&amp;storeId=10301&amp;langId=-1" class="validate" id="header_emailSignup">
+                    <p style="margin-bottom: 8px;">Enter your email to receive great offers from Costco.com.</p>
+                    <div class="form-item">
+                        <label for="header_emailSignUpEmail">Email address</label>
+                        <input style="display:block;" id="header_emailSignUpEmail" name="emailSignUp" type="text" />
+                    </div>
+                    <div class="form-item">
+                        <button type="submit" class="submit">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </li>
+        
+            <li>
+                <span class="dropdown-link" tabindex="0" id="costco-cashcard-dropdown">Costco Cash Card Balance</span>
+                <div class="dropdown" style="background-color:transparent; border:none; padding:0px;">
+                
+                    
+                    <script>
+                        var cashCardBalanceUrl = 'https://www.costco.com/CashCardFormView?langId=-1&storeId=10301&catalogId=10701';
+                    </script>
+                    <iframe id="CashCardIFrame" scrolling="no" frameBorder="0" allowtransparency="true"></iframe>
+                </div>
+            </li>
+        
+        <li><a href="http://www.costco.com/customer-service.html?cm_re=Common-_-Top_Nav-_-Customer_Service">Customer Service</a></li>
+    </ul>
+    <ul id="header_links">
+        
+            <li>
+                <a href="http://www.costco.com/OrderByItemsDisplayView?storeId=10301&amp;catalogId=10701&amp;langId=-1&amp;fromPage=OrderByItemsDisplayView&amp;cm_re=Common-_-Top_Nav-_-Order_By_Items">Order by Item Number</a>
+            </li>
+        
+        <li>
+            <a href="https://www.costco.com/OrderStatusCmd?storeId=10301&amp;catalogId=10701&amp;langId=-1&amp;orderStatusStyle=strong&amp;URL=OrderStatusSummaryView&amp;cm_re=Common-_-Top_Nav-_-Order_Status&amp;fromYear=2012&amp;fromMonth=11&amp;toYear=2013&amp;toMonth=4" class="h_tnav_but" id="WC_CachedHeaderDisplay_Link_3">Order Status</a>
+        </li>
+        <li>
+            <a href="https://www.costco.com/LogonForm?langId=-1&amp;storeId=10301&amp;catalogId=10701&amp;URL=LogonForm&amp;cm_re=Common-_-Top_Nav-_-My_Account" class="h_tnav_but" id="headerMyAccount">My Account</a>
+        </li>
+        
+                
+        
+        <li id="signInOutContainer">
+            
+            <a href="https://www.costco.com/LogonForm?langId=-1&storeId=10301&catalogId=10701&cm_re=Common-_-Top_Nav-_-Logon" class="red" id="logon">Sign In or Register</a>
+            <a href="https://www.costco.com/Logoff?langId=-1&storeId=10301&catalogId=10701&URL=TopCategoriesDisplay&cm_re=Common-_-Top_Nav-_-Logoff" id="logoff">Sign Out</a>
+        </li>
+        <script type="text/javascript">signInOutContainerInit();</script>
+
+    </ul>
+    <div id="header-promo" class="espot">
+        <!-- BEGIN ContentAreaESpot.jsp -->
+
+
+
+
+<div class="genericESpot" id="WC_ContentAreaESpot_div_1_Header">
+    <div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_Header">[Header]</div>
+
+    
+                           <a id="WC_ContentAreaESpot_links_7_1" class="ClickInfoLink" href="http://www.costco.com/warehouse-instant-savings.html"  >
+                            <span class="ClickInfoUrl" style="display:none;">http://www.costco.com/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&mpe_id=-1010&intv_id=29001&storeId=10301&catalogId=10701&langId=-1&URL=%2fwcsstore%2fhtml%2fblank.html</span>
+                       <h3>Click here for warehouse savings valid through 6/2/13!</h3>
+               
+                           </a>
+                       
+
+</div>
+
+<!-- END ContentAreaESpot.jsp -->
+    </div>
+</div>
+
+<div id="sub-header">
+    <!-- BEGIN TopNavigationDisplay.jsp -->
+
+<div id="category-navigation" class="ui-corner-tl">
+    <span tabindex="0" class="subhead-title">SHOP ALL DEPARTMENTS</span>				
+    <div id="category-navigation-categories">
+        <ul>
+        <li class="first">&nbsp;</li>
+            
+                <li>
+                    <a href="http://www.costco.com/appliances.html" id="WC_CategoriesSidebarDisplayf_links_3_1" name="Appliances" title="Appliances">Appliances</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/baby-kids.html" id="WC_CategoriesSidebarDisplayf_links_3_2" name="Baby, Kids &amp; Toys" title="Baby, Kids &amp; Toys">Baby, Kids & Toys</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/clothing.html" id="WC_CategoriesSidebarDisplayf_links_3_3" name="Clothing &amp; Accessories" title="Clothing &amp; Accessories">Clothing & Accessories</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/computers.html" id="WC_CategoriesSidebarDisplayf_links_3_4" name="Computers &amp; Printers" title="Computers &amp; Printers">Computers & Printers</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/electronics.html" id="WC_CategoriesSidebarDisplayf_links_3_5" name="Electronics" title="Electronics">Electronics</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/food-gift-baskets.html" id="WC_CategoriesSidebarDisplayf_links_3_6" name="Food &amp; Gift Baskets" title="Food &amp; Gift Baskets">Food & Gift Baskets</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/funeral.html" id="WC_CategoriesSidebarDisplayf_links_3_7" name="Funeral" title="Funeral">Funeral</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/furniture.html" id="WC_CategoriesSidebarDisplayf_links_3_8" name="Furniture" title="Furniture">Furniture</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/gift-cards-tickets-floral.html" id="WC_CategoriesSidebarDisplayf_links_3_9" name="Gift Cards, Tickets &amp; Floral" title="Gift Cards, Tickets &amp; Floral">Gift Cards, Tickets & Floral</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/hardware-auto-tires.html" id="WC_CategoriesSidebarDisplayf_links_3_10" name="Hardware, Auto &amp; Tires" title="Hardware, Auto &amp; Tires">Hardware, Auto & Tires</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/health-beauty.html" id="WC_CategoriesSidebarDisplayf_links_3_11" name="Health &amp; Beauty" title="Health &amp; Beauty">Health & Beauty</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/home-and-decor.html" id="WC_CategoriesSidebarDisplayf_links_3_12" name="Home &amp; Decor" title="Home &amp; Decor">Home & Decor</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/jewelry.html" id="WC_CategoriesSidebarDisplayf_links_3_13" name="Jewelry" title="Jewelry">Jewelry</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/office-products.html" id="WC_CategoriesSidebarDisplayf_links_3_14" name="Office Products" title="Office Products">Office Products</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/patio-lawn-garden.html" id="WC_CategoriesSidebarDisplayf_links_3_15" name="Patio, Lawn &amp; Garden" title="Patio, Lawn &amp; Garden">Patio, Lawn & Garden</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/pet-supplies.html" id="WC_CategoriesSidebarDisplayf_links_3_16" name="Pet Supplies" title="Pet Supplies">Pet Supplies</a>
+                </li>
+            
+                <li>
+                    <a href="http://www.costco.com/sports-fitness.html" id="WC_CategoriesSidebarDisplayf_links_3_17" name="Sports &amp; Fitness" title="Sports &amp; Fitness">Sports & Fitness</a>
+                </li>
+            
+            <li class="last">&nbsp;</li>
+        </ul>
+    </div>
+    <div id="category-navigation-flyout"></div>
+</div>
+<!-- END TopNavigationDisplay.jsp -->
+    <div id="search" class="blue-bar">
+        <form id="CatalogSearchForm" action="CatalogSearch" class="validate">
+            <input type="hidden" name="storeId" value="10301" id="WC_CachedHeaderDisplay_FormInput_storeId_In_CatalogSearchForm_1" />
+            <input type="hidden" name="catalogId" value="10701" id="WC_CachedHeaderDisplay_FormInput_catalogId_In_CatalogSearchForm_1" />
+            <input type="hidden" name="langId" value="-1" id="WC_CachedHeaderDisplay_FormInput_langId_In_CatalogSearchForm_1" />
+            <label for="SimpleSearchForm_SearchTerm" class="subhead-title">Search:</label>
+            <input type="text" class="search-input" name="keyword" size="200" placeholder="What do you want to find?" 
+                    id="SimpleSearchForm_SearchTerm" />
+            <button type="submit" id="search_submit"><span class="ui-icon ui-icon-search">Search</span></button> 
+        </form>
+    </div>
+    <div id="mini-shopping-cart" class="ui-corner-tr">
+        <!-- BEGIN MiniShopCartDisplay.jsp -->
+
+<a href="https://www.costco.com/OrderItemDisplayViewShiptoAssoc?langId=-1&amp;storeId=10301&amp;catalogId=10701&amp;orderId=." class="subhead-title">
+    Cart
+</a>
+
+<!-- END MiniShopCartDisplay.jsp -->
+    </div>		
+    <script type="text/javascript">miniShopCartRefresh();</script>
+</div>
+<!-- END CachedHeaderDisplay.jsp -->	
+
+</html><!-- BreadCrumbs -->
+
+<ul id="breadcrumbs">
+        
+</ul>
+<!-- /BreadCrumbs -->
+    </div>
+</div>
+<!-- END HeaderDisplay.jspf --><!-- END LayoutContainerTop.jspf --><!-- Main Content Start -->
+        <div id="main_content_wrapper">
+            <div id="left_nav">
+                <h2>Select a Country</h2>
+                <div class="nav-box">
+                    <div class="form-item" style="margin-bottom:10px;">
+                        <label>Country</label>
+                        <select name="selectCountry" id="selectCountry" class="drop_down">
+                            
+                                        <option value='11006'>
+                                            Australia
+                                        </option>
+                                    
+                                        <option value='10001'>
+                                            Canada
+                                        </option>
+                                    
+                                        <option value='11007'>
+                                            Japan
+                                        </option>
+                                    
+                                        <option value='11008'>
+                                            Korea
+                                        </option>
+                                    
+                                        <option value='11009'>
+                                            Mexico
+                                        </option>
+                                    
+                                        <option value='11010'>
+                                            Puerto Rico
+                                        </option>
+                                    
+                                        <option value='11011'>
+                                            Taiwan
+                                        </option>
+                                    
+                                        <option value='11012'>
+                                            United Kingdom
+                                        </option>
+                                    
+                                        <option value='10002'>
+                                            United States
+                                        </option>
+                                    
+                        </select>
+                    </div>
+                    
+                            <div id="StateProvincePanel_11006" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11006">
+                                    
+                                        <option value='11035'>
+                                            New South Wales
+                                        </option>
+                                    
+                                        <option value='11049'>
+                                            Victoria
+                                        </option>
+                                    
+                                        <option value='13000'>
+                                            ACT
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_10001" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_10001">
+                                    
+                                        <option value='10003'>
+                                            Alberta
+                                        </option>
+                                    
+                                        <option value='10011'>
+                                            British Columbia
+                                        </option>
+                                    
+                                        <option value='10032'>
+                                            Manitoba
+                                        </option>
+                                    
+                                        <option value='10034'>
+                                            New Brunswick
+                                        </option>
+                                    
+                                        <option value='10038'>
+                                            Newfoundland and Labrador
+                                        </option>
+                                    
+                                        <option value='10040'>
+                                            Nova Scotia
+                                        </option>
+                                    
+                                        <option value='10044'>
+                                            Ontario
+                                        </option>
+                                    
+                                        <option value='10088'>
+                                            Prince Edward Island
+                                        </option>
+                                    
+                                        <option value='10090'>
+                                            Quebec
+                                        </option>
+                                    
+                                        <option value='10109'>
+                                            Saskatchewan
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_11007" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11007">
+                                    
+                                        <option value='11017'>
+                                            Chiba
+                                        </option>
+                                    
+                                        <option value='11020'>
+                                            Fukuoka
+                                        </option>
+                                    
+                                        <option value='11024'>
+                                            Hokkaido
+                                        </option>
+                                    
+                                        <option value='11026'>
+                                            Hyogo
+                                        </option>
+                                    
+                                        <option value='11028'>
+                                            Kanagawa
+                                        </option>
+                                    
+                                        <option value='11041'>
+                                            Saitama
+                                        </option>
+                                    
+                                        <option value='11047'>
+                                            Tokyo
+                                        </option>
+                                    
+                                        <option value='13001'>
+                                            Kyoto
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_11008" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11008">
+                                    
+                                        <option value='13004'>
+                                            Busan
+                                        </option>
+                                    
+                                        <option value='13005'>
+                                            Daegu
+                                        </option>
+                                    
+                                        <option value='13006'>
+                                            Daejeon
+                                        </option>
+                                    
+                                        <option value='13007'>
+                                            Gyeonggi Province
+                                        </option>
+                                    
+                                        <option value='13008'>
+                                            Seoul
+                                        </option>
+                                    
+                                        <option value='13009'>
+                                            Ulsan
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_11009" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11009">
+                                    
+                                        <option value='11013'>
+                                            Aguascalientes
+                                        </option>
+                                    
+                                        <option value='11015'>
+                                            Baja California Norte
+                                        </option>
+                                    
+                                        <option value='11016'>
+                                            Baja California Sur
+                                        </option>
+                                    
+                                        <option value='11018'>
+                                            Chihuahua
+                                        </option>
+                                    
+                                        <option value='11021'>
+                                            Guanajuato
+                                        </option>
+                                    
+                                        <option value='11022'>
+                                            Guerrero
+                                        </option>
+                                    
+                                        <option value='11027'>
+                                            Jalisco
+                                        </option>
+                                    
+                                        <option value='11031'>
+                                            Mexico
+                                        </option>
+                                    
+                                        <option value='11032'>
+                                            Mexico, D.F.
+                                        </option>
+                                    
+                                        <option value='11033'>
+                                            Michoacan
+                                        </option>
+                                    
+                                        <option value='11034'>
+                                            Morelos
+                                        </option>
+                                    
+                                        <option value='11036'>
+                                            Nuevo Leon
+                                        </option>
+                                    
+                                        <option value='11038'>
+                                            Puebla
+                                        </option>
+                                    
+                                        <option value='11039'>
+                                            Queretaro
+                                        </option>
+                                    
+                                        <option value='11040'>
+                                            Quintana Roo
+                                        </option>
+                                    
+                                        <option value='11042'>
+                                            San Luis Potosi
+                                        </option>
+                                    
+                                        <option value='11044'>
+                                            Sonora
+                                        </option>
+                                    
+                                        <option value='11048'>
+                                            Veracruz
+                                        </option>
+                                    
+                                        <option value='11051'>
+                                            Yucatan
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_11010" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11010">
+                                    
+                                        <option value='11014'>
+                                            Bairoa Ward
+                                        </option>
+                                    
+                                        <option value='11023'>
+                                            Hato Tejas Ward
+                                        </option>
+                                    
+                                        <option value='11037'>
+                                            Pque Ind Minilla
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_11011" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11011">
+                                    
+                                        <option value='11025'>
+                                            Hsinchu
+                                        </option>
+                                    
+                                        <option value='11029'>
+                                            Kaohsiung
+                                        </option>
+                                    
+                                        <option value='11045'>
+                                            Taichung
+                                        </option>
+                                    
+                                        <option value='11046'>
+                                            Taipei
+                                        </option>
+                                    
+                                        <option value='13002'>
+                                            Tainan
+                                        </option>
+                                    
+                                        <option value='13003'>
+                                            Taoyuan
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_11012" class="form-item statePanel">
+                                <label>Search Province</label>
+                                <select id="stateProvSelect_11012">
+                                    
+                                        <option value='11019'>
+                                            England
+                                        </option>
+                                    
+                                        <option value='11043'>
+                                            Scotland
+                                        </option>
+                                    
+                                        <option value='11050'>
+                                            Wales
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                            <div id="StateProvincePanel_10002" class="form-item statePanel">
+                                <label>Search Province (State)</label>
+                                <select id="stateProvSelect_10002">
+                                    
+                                        <option value='10112'>
+                                            Alabama
+                                        </option>
+                                    
+                                        <option value='10133'>
+                                            Alaska
+                                        </option>
+                                    
+                                        <option value='10144'>
+                                            Arizona
+                                        </option>
+                                    
+                                        <option value='10162'>
+                                            Arkansas
+                                        </option>
+                                    
+                                        <option value='10175'>
+                                            California
+                                        </option>
+                                    
+                                        <option value='10254'>
+                                            Colorado
+                                        </option>
+                                    
+                                        <option value='10268'>
+                                            Connecticut
+                                        </option>
+                                    
+                                        <option value='10279'>
+                                            Delaware
+                                        </option>
+                                    
+                                        <option value='10288'>
+                                            District of Columbia
+                                        </option>
+                                    
+                                        <option value='10290'>
+                                            Florida
+                                        </option>
+                                    
+                                        <option value='10332'>
+                                            Georgia
+                                        </option>
+                                    
+                                        <option value='10354'>
+                                            Hawaii
+                                        </option>
+                                    
+                                        <option value='10365'>
+                                            Idaho
+                                        </option>
+                                    
+                                        <option value='10376'>
+                                            Illinois
+                                        </option>
+                                    
+                                        <option value='10410'>
+                                            Indiana
+                                        </option>
+                                    
+                                        <option value='10427'>
+                                            Iowa
+                                        </option>
+                                    
+                                        <option value='10440'>
+                                            Kansas
+                                        </option>
+                                    
+                                        <option value='10451'>
+                                            Kentucky
+                                        </option>
+                                    
+                                        <option value='10465'>
+                                            Louisiana
+                                        </option>
+                                    
+                                        <option value='10486'>
+                                            Maine
+                                        </option>
+                                    
+                                        <option value='10497'>
+                                            Maryland
+                                        </option>
+                                    
+                                        <option value='10517'>
+                                            Massachusetts
+                                        </option>
+                                    
+                                        <option value='10540'>
+                                            Michigan
+                                        </option>
+                                    
+                                        <option value='10562'>
+                                            Minnesota
+                                        </option>
+                                    
+                                        <option value='10575'>
+                                            Mississippi
+                                        </option>
+                                    
+                                        <option value='10594'>
+                                            Missouri
+                                        </option>
+                                    
+                                        <option value='10611'>
+                                            Montana
+                                        </option>
+                                    
+                                        <option value='10620'>
+                                            Nebraska
+                                        </option>
+                                    
+                                        <option value='10629'>
+                                            Nevada
+                                        </option>
+                                    
+                                        <option value='10642'>
+                                            New Hampshire
+                                        </option>
+                                    
+                                        <option value='10657'>
+                                            New Jersey
+                                        </option>
+                                    
+                                        <option value='10674'>
+                                            New Mexico
+                                        </option>
+                                    
+                                        <option value='10685'>
+                                            New York
+                                        </option>
+                                    
+                                        <option value='10710'>
+                                            North Carolina
+                                        </option>
+                                    
+                                        <option value='10731'>
+                                            North Dakota
+                                        </option>
+                                    
+                                        <option value='10740'>
+                                            Ohio
+                                        </option>
+                                    
+                                        <option value='10761'>
+                                            Oklahoma
+                                        </option>
+                                    
+                                        <option value='10776'>
+                                            Oregon
+                                        </option>
+                                    
+                                        <option value='10789'>
+                                            Pennsylvania
+                                        </option>
+                                    
+                                        <option value='10808'>
+                                            Rhode Island
+                                        </option>
+                                    
+                                        <option value='10817'>
+                                            South Carolina
+                                        </option>
+                                    
+                                        <option value='10828'>
+                                            South Dakota
+                                        </option>
+                                    
+                                        <option value='10837'>
+                                            Tennessee
+                                        </option>
+                                    
+                                        <option value='10852'>
+                                            Texas
+                                        </option>
+                                    
+                                        <option value='10885'>
+                                            Utah
+                                        </option>
+                                    
+                                        <option value='10899'>
+                                            Vermont
+                                        </option>
+                                    
+                                        <option value='10910'>
+                                            Virginia
+                                        </option>
+                                    
+                                        <option value='10935'>
+                                            Washington
+                                        </option>
+                                    
+                                        <option value='10951'>
+                                            West Virginia
+                                        </option>
+                                    
+                                        <option value='10964'>
+                                            Wisconsin
+                                        </option>
+                                    
+                                        <option value='10985'>
+                                            Wyoming
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                        
+                    <div class="form-item">
+                        <button class="submit costco-button" type="submit"  id="executeSearchForWarehouses">
+                            GO
+                        </button>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="box-650" id="warehousemapcontent" >
+                
+                <h1 class="WarehouseBrowseH1">Warehouse Locations</h1>
+                <ul class="toollinks">
+                    <li><a id="redirectToWarehouseLocator">Search for a Costco Warehouse</a></li>
+                    <li><a id="warehouseBrowsePrint" class="print-link">Print</a></li>
+                </ul>
+                
+                <div class="warehouseList" style="position:relative;margin-top:30px;"></div>
+                <div id="warehouseMap" class="warehouseMap mapWidth"></div>
+                <div id="warehouseListContainer" class="warehouseListContent"></div>
+            </div>
+            <div class="espot-column espot-212">
+                <div class="espot espot-212">
+                    <!-- BEGIN ContentAreaESpot.jsp -->
+
+
+
+
+<div class="genericESpot" id="WC_ContentAreaESpot_div_1_WarehouseBrowseRightNav1">
+    <div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_WarehouseBrowseRightNav1">[WarehouseBrowseRightNav1]</div>
+
+    
+
+</div>
+
+<!-- END ContentAreaESpot.jsp -->
+                </div>
+                <br class="clear">
+                <div class="espot-column espot-212">
+                    <!-- BEGIN ContentAreaESpot.jsp -->
+
+
+
+
+<div class="genericESpot" id="WC_ContentAreaESpot_div_1_WarehouseBrowseRightNav2">
+    <div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_WarehouseBrowseRightNav2">[WarehouseBrowseRightNav2]</div>
+
+    
+
+</div>
+
+<!-- END ContentAreaESpot.jsp -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN FooterDisplay.jspf --><!--  
+    currentBuildNumber = 3.0.2650.0
+    Server Name:   www.costco.com 
+    Local Address: xxx.xxx.xxx.123
+    Local Name:    cp1Server23
+-->
+
+                    
+<div id="footer">
+    <!-- BEGIN ContentAreaESpot.jsp -->
+
+
+
+
+<div class="genericESpot" id="WC_ContentAreaESpot_div_1_Footer">
+    <div class="caption" style="display:none" id="WC_ContentAreaESpot_div_2_Footer">[Footer]</div>
+
+    <!-- usa-official-footer-121220 -->
+<ul class="c980">
+  <li class="footer-column">
+    <ul>
+      <li class="column-header">About us</li>
+      <li><a href="/membership-information.html">Company Information </a></li>
+      <li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=83830&amp;p=irol-irhome&amp;cm_re=1_en-_-Bottom_Nav-_-Bottom_investor&amp;lang=en-US" target="_blank">Investor Relations</a></li>
+      <li><a href="/privacy-policy.html">Your Privacy Rights</a></li>
+      <li><a href="/terms-and-conditions-of-use.html">Terms and Conditions</a></li>
+      <li><a href="/jobs.html">Jobs</a></li>
+      <li><a href="/employee-website.html">Employee Site</a></li>
+      <li><a href="/charitable-giving.html">Charitable Contributions</a></li>
+      <li class="column-header"><a href="/SiteMap?storeId=10301&amp;catalogId=10701">Site Map</a></li>
+    </ul>
+  </li>
+  <li class="footer-column">
+    <ul>
+      <li class="column-header">Membership</li>
+      <li><a href="/join-costco.html">Join Now</a></li>
+      <li><a href="/membership-renewal.html">Renew Membership</a></li>
+      <li><a href="http://www.americanexpress.com/costcofooter">Credit Card</a></li>
+      <li class="column-header"><a href="/LogonForm?langId=-1&amp;storeId=10301&amp;catalogId=10701">My Account</a></li>
+      <li><a href="/LogonForm?langId=-1&amp;storeId=10301&amp;catalogId=10701">Sign in or Register</a></a></li>
+      <li><a href="/OrderStatusCmd?storeId=10301&amp;catalogId=10701&amp;langId=-1&amp;orderStatusStyle=strong&amp;URL=OrderStatusSummaryView&amp;cm_re=Common-_-Footer-_-Order_Status">Order Status</a></li>
+      <li><a href="/NonAjaxAccountWishListDisplayView?storeId=10301&amp;catalogId=10701&amp;langId=-1&amp;listId=.">My Wish Lists</a></a></li>
+    </ul>
+  </li>
+  <li class="footer-column">
+    <ul>
+      <li class="column-header"><a href="/customer-service.html">Customer Service</a></li>
+      <li><a href="/concierge.html">Free Technical Support </a></li>
+      <li><a href="/shipping.html">Shipping</a></li>
+      <li><a href="/returns-replacements-refunds.html">Returns</a></li>
+      <li><a href="/product-information.html">Product Info</a></li>
+      <li><a href="/recalls.html">Recalls</a></li>
+      <li><a href="/rebates.html">Rebates</a></li>
+      <li><a href="/fraud-prevention.html">Preventing Fraud </a></li>
+      <li><a href="/faq.html">FAQs</a></li>
+      <li><a href="/export-sales.html">Export Sales</a> </li>
+      <li><a href="/volume-bulk-sales.html">Volume Sales</a>
+    </ul>
+  </li>
+  <li class="footer-column">
+    <ul>
+      <li class="column-header">Locations & Services</li>
+      <li><a href="/WarehouseLocatorView?langId=-1&amp;storeId=10301&amp;catalogId=10701">Locations</a></li>
+      <li><a href="/new-locations.html">Locations Coming Soon</a></li>
+      <li><a href="/hours-and-holiday-closures.html">Hours &amp; Holiday Closures</a></li>
+      <li><a href="/author-signings.html">Author Signings</a></li>
+      <li><a href="/gasoline.html">Gasoline</a></li>
+      <li><a href="/hearing-aid-center.html">Hearing Aid Center</a></li>
+      <li><a href="/optical.html">Optical</a></li>
+      <li><a href="/services.html">Costco Services </a></li>
+      <li><a href="/special-events.html">Special Events</a></li>
+    </ul>
+  </li>
+  </li>
+  <li class="footer-column">
+    <ul>
+      <style>
+.footer-column .column-header{line-height:1.25em}
+</style>
+      <li class="column-header">The Costco Connection</li>
+      <li><a href="http://www.costcoconnection.com/connection/current" target="_blank">Current Issue</a></li>
+      <li><a href="/costco-connection-online-edition.html">Recipes The Costco Way</a></li>
+      <li><a href="/costco-connection-online-edition.html">Resources</a></li>
+      <li><a href="http://www.diabetesdigest.com/epubs/CostcoQ412">Diabetes Digest</a></li>
+      <li class="column-header"><a href="/vendor-inquiries.html">Vendors &amp; Suppliers</a> </li>
+      <li><a href="/disclosure-regarding-human-trafficking-and-anti-slavery.html">Supply Chain Disclosure</a> </li>
+      <li><a href="/confidential-ethics-hotline-for-suppliers.html">Ethics Hotline for Suppliers</a> </li>
+      <li><a href="/supplier-diversity.html">Supplier Diversity </a></li>
+    </ul>
+  </li>
+  <li class="footer-column">
+    <ul>
+      <form action="EmailSubscription" class="validate" id="footer_emailSignup">
+        <li class="column-header">
+          <label for="footer_emailSignUpEmail"> Join Our Community </label>
+        </li>
+        <li><b>Sign Up for Great Offers and Values from Costco.com</b></li>
+        <li>
+          <input style="display:block;" id="footer_emailSignUpEmail" name="emailSignUp" type="text" />
+        </li>
+        <li style="margin-top: 5px;">
+          <button type="submit" class="submit">Sign up</button>
+        </li>
+        <li>&nbsp;</li>
+        <li>&copy; 1998 &mdash; 2013</li>
+        <li>Costco Wholesale Corporation</li>
+        <li>All rights reserved</li>
+      </form>
+    </ul>
+  </li>
+</ul>
+<!-- usa-official-footer-121220 -->
+<script type="text/javascript">
+    /* Adobe Tag Container Loader version: 1.0.7
+    Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+    More info available at http://www.omniture.com */
+    var sc_omni = new TagContainerLoader()
+    sc_omni.tagContainerDC = "d2"
+    sc_omni.tagContainerNamespace = "costco1"
+    sc_omni.tagContainerName = "TM_OMNI"
+    sc_omni.loadTagContainer()
+    //http://www.adobetag.com/d2/costco1/dev/TM_OMNI.js
+
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    function TagContainerLoader() {
+        var t = this, w = t.w = window; t.d = w.document; t._c = 's_l'; if (!w.s_c_il) { w.s_c_il = []; w.s_c_in = 0 } t._il = w.s_c_il; t._in = w.s_c_in; t._il[t._in] = t; w.s_c_in++; t.timeout = 5000; t.to =
+        new Function('var t=s_c_il[' + t._in + '];if(t.mt)t.mt(0)'); t.loadTagContainer = function () {
+            var t = this, l, p = t.d.body, n, a = t.tagContainerServer ? t.tagContainerServer : 'www.adobetag.com', b =
+            t.tagContainerServerSecure ? t.tagContainerServerSecure : a, c = t.d.cookie, d = t.tagContainerEnv ? t.tagContainerEnv : (c ? (c.indexOf('s_tagEnv=dev') >= 0 ? 'dev' : (c.indexOf('s_tagEnv=stage') >= 0 ? 'stage' : 'live')) :
+            'live'), u = (t.w.location.protocol.toLowerCase().indexOf('https') >= 0 ? 'https://' + b : 'http://' + a) + '/' + (t.tagContainerDC ? t.tagContainerDC + '/' : '') + t.tagContainerNamespace + '/' + d + '/' + t.tagContainerName + '.js'
+            if (t.tagContainerURL) u = t.tagContainerURL; if (t.timeout) t.ti = setTimeout(t.to, t.timeout); if (t.d.getElementsByTagName) { l = t.d.getElementsByTagName('HEAD'); if (l && l[0]) p = l[0] } else p = 0; if (
+            p && !t.tagContainerSynchronous) {
+                n = t.d.createElement('SCRIPT'); if (n) {
+                    n.type = 'text/javascript'; n.setAttribute('async', 'async'); n.src = u; if (p.firstChild) p.insertBefore(n, p.firstChild); else p.appendChild(n)
+                }
+            } else t.d.write('<sc' + 'ript language="JavaScript" type="text/javascript" sr' + 'c="' + u + '"></sc' + 'ript>')
+        }; t.fs = function (x, y) {
+            if (x && y) {
+                var a = x.split(','), b = y.split(','), i, j; for (i = 0; i < a.length; i++) {
+                    for (j = 0; j < b.length; j++) if (a[i] == b[j]) return 1
+                }
+            } return 0
+        }; t.aa = function (a) { var b = 0, i; if (a) { b = []; for (i = 0; i < a.length; i++) b[i] = a[i] } return b }; t.wl = []; t.wq = []; t.createAsynchronousCustomTagHandler = function (
+        o, f) {
+            var t = this, x, i; if (!f) { f = o; o = 0; x = t.w } else { if (!t.w[o]) t.w[o] = {}; x = t.wl[o] = t.w[o] } if (typeof (f) != 'object') f = [f]; for (i = 0; i < f.length; i++) if (!x[f[i]]) x[f[i]] = new Function('var t=s_c_il[' + t._in +
+            '];t.wq[t.wq.length]={' + (o ? 'o:"' + o + '",' : '') + 'f:"' + f[i] + '",a:t.aa(arguments)}')
+        }; t.as = function (x) { var y = [], i; for (i = 1; i < x.length; i++) y[y.length] = x[i]; return y }; t.s = 0; t.contextData = {}
+        t.retrieveLightData = {}; if (!w.s_giq) w.s_giq = []; t._gi = w.s_gi; w.s_gi = new Function('u', 'var t=s_c_il[' + t._in +
+        '],w=t.w,l=t._il,i,j,x,s;u=u.toLowerCase();if(l)for(j=0;j<2;j++)for(i=0;i<l.length;i++){s=l[i];x=s._c;if((!x||x=="s_c"||(j>0&&x=="s_l"))&&s.oun&&(s.oun==u||(s.fs&&s.sa&&s.fs(s.oun,u)))){' +
+        'if(s.sa)s.sa(u);return s}}if(!t.oun){t.sa(u);return t}if(t._gi)return t._gi(u);s=new TagContainerLoader();s.tagContainerName="s_tca_"+w.s_giq.length;s.sa(u);w.s_giq[w.s_giq.length]=s;return s'); t.sa =
+        function (u) { var t = this; if (t.s) t.s.sa(u); t.un = u; if (!t.oun) t.oun = u; else if (!t.fs(t.oun, u)) t.oun += ',' + u }; t.tq = []; t.track = t.t = function (vo) {
+            var t = this, m; if (t.s) return t.s.t(vo); if (!vo) vo = {}; for (m in t) {
+                if (
+                m != 'un' || t.u != t.un) vo[m] = t[m]
+            } t.tq[t.tq.length] = vo; t.lnk = t.linkName = t.linkType = ''; return '';
+        }; t.trackLink = t.tl = function (o, u, n, vo) {
+            var t = this; if (t.s) return t.s.tl(o, u, v, vo); t.lnk = o; t.linkType = u
+            t.linkName = n; return t.t(vo)
+        }; t.trackLight = function (p, ss, i, vo) { var t = this; if (t.s) return t.s.trackLight(p, ss, i, vo); t.lightProfileID = p; t.lightStoreForSeconds = ss; t.lightIncrementBy = i; return t.t(vo) }
+        t.lmq = []; t.loadModule = function (n, u, d) { var t = this; if (t.s) return t.s.loadModule(n, u, d); t.lmq[t.lmq.length] = { n: n, u: u, d: d }; return 0 }; t.ml = []; t.mmq = []; t.mo = function (m, f) {
+            var t = this, i; t.ml[m] = t[m] = {}; if (f)
+                for (i = 0; i < f.length; i++) t[m][f[i]] = new Function('var t=s_c_il[' + t._in + '];t.mmq[t.mmq.length]={m:"' + m + '",f:"' + f[i] + '",a:t.aa(arguments)}')
+        }; t.mo('Media', ['open', 'play', 'stop', 'close', 'track']); t.mo(
+        'Survey', ['launch']); t.mci = []; t.mn = []; t.mc = function (n, m, p, k) {
+            var t = this, b, l = 0; if (typeof (mboxFactoryDefault) == 'undefined' || t.d.getElementById(m) == null) return; if (!mboxFactoryDefault.isEnabled()) {
+                clearInterval(t.mci[k]); t.mt(true); return
+            } if (typeof (mboxFactoryDefault.get(t.mn[0], 0)) != 'undefined') l = mboxFactoryDefault.get(t.mn[0], 0).isShown(); if (k == 0 || l) {
+                clearInterval(t.mci[k]); b =
+                mboxFactoryDefault.create(n, p.split("&")); if (b) b.load()
+            }
+        }; if (!w.mboxCreate && !w.mboxDefine && !w.mboxUpdate) {
+            w.mboxVersion = 'mini'; if (!t.d.getElementById('mboxScriptContainer')) t.d.write(
+            '<div id="mboxScriptContainer" style="display:none;visibility:hidden;"></div><style>.mboxDefault{visibility:hidden;}</style>'); t.mt = function (f) {
+                var t = this, i, j, d; if (typeof (mboxFactoryDefault) ==
+                'undefined' || f) {
+                    for (i in t.mci) clearInterval(t.mci[i]); d = (t.d.getElementsByClassName) ? t.d.getElementsByClassName('mboxDefault') : t.d.getElementsByTagName('div'); for (j in d) if (d[j].className ==
+                    "mboxDefault") d[j].style.visibility = "visible"
+                }
+            }; t.mpi = {}; t.mp = function (x, m) {
+                var t = this; t.mpi[x] = setInterval(function () { if (typeof (mboxFactoryDefault) === 'undefined') return; m(); clearInterval(t.mpi[x]) },
+                13)
+            }; w.mboxCreate = function (n) {
+                var j = 0, i, m, p, k; for (i in t.mn) if (t.mn[i] == n) j++; t.mn[t.mn.length] = n; m = 'mboxMarker-default-' + n + '-' + j; t.d.write('<div id="' + m +
+                '" style="visibility:hidden;display:none">&nbsp;</div>'); p = t.as(arguments).join("&"); k = t.mci.length; t.mci[k] = setInterval(function () { t.mc(n, m, p, k); }, 5)
+            }; w.mboxDefine = function (d, n) {
+                var a = t.as(arguments)
+                t.mp('define_' + n, function () { mboxFactoryDefault.create(n, a, d); })
+            }; w.mboxUpdate = function (n) {
+                var a = t.as(arguments), x; x = 'update_' + n; t.mpi[x] = setInterval(function () {
+                    if (typeof (mboxFactoryDefault) ===
+                    'undefined' || typeof (mboxFactoryDefault.get(n)) === 'undefined') return; mboxFactoryDefault.update(n, a); clearInterval(t.mpi[x]);
+                }, 13)
+            }; w.mboxLoadSCPlugin = function (s) {
+                (function () {
+                    if (typeof (
+                    mboxFactoryDefault) === 'undefined' || typeof (mboxExternalLoadSCPlugin) === 'undefined' || (s._c == 's_l' && !s.s)) { setTimeout(arguments.callee, 19); return } if (s._c == 's_l') s = s.s; mboxExternalLoadSCPlugin(s)
+                })()
+            };
+        }
+    }
+</script>
+
+</div>
+
+<!-- END ContentAreaESpot.jsp -->
+</div>
+
+<div id="fsa-popup" style="display: none;" >
+    <h1 class="fsa-popup">Flexible Spending Account </h1>
+    <!-- BEGIN TextSpot.jsp --><!-- spotName productFsaSpot  --><!-- END TextSpot.jsp -->
+    <div>			
+        <p>
+            <span class="bold">Why is this item marked as FSA Eligible?</span><br>This item is marked with the following icon as FSA eligible to identify that it MAY be purchased using a Flexible Spending Account (FSA):
+        </p>
+            <span class="fsa-link">&#10004; FSA Eligible Item</span>
+        <p>
+            <span class="bold">What is a Flexible Spending Account (FSA)?</span><br>A FSA (Flexible Spending Account) allows use of the funds an individual has designated to be set aside pre-tax for medical expenses, typically with their employer, when selecting healthcare programs during the previous year.
+        </p>
+        <p>
+            <span class="bold">What types of purchases are FSA eligible?</span><br>Over-the-counter medical supplies and equipment are considered reimbursable by an FSA account in 2011 and include the following categories:
+        </p>
+        <ul>
+            <li>Contact lens solution</li>
+            <li>Diagnostic devices (i.e. blood pressure and blood glucose monitors)</li>
+            <li>Durable medical equipment and goods</li>
+            <li>Insulin</li>
+            <li>Prescription medications</li>
+        </ul>
+        <p>
+            <span class="bold italic">Note:</span> Although the IRS sets guidelines for FSA programs, <span class="italic">individual employers have the final determination of which expenses are covered by their FSA programs.</span>
+        </p>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery/jquery-ui-1.8.10.custom.min.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery.hover.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery.truncator.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery.truncate.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/jquery.validate.js"></script>
+
+
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/costco.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/productCompare.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/categoryNavigation.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/ezColumns.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/carousel.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/json2.js"></script>
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/forms.js"></script>
+
+
+<script type="text/javascript" src="/wcsstore/CostcoGLOBALSAS/javascript/member.js"></script>
+
+<!-- END FooterDisplay.jspf -->
+    <script type="text/javascript" src="WarehouseLocatorJSView?catalogId=10701&amp;langId=-1&amp;storeId=10301"></script>
+    
+<script id="warehouseLoadingTemplate" type="text/x-jquery-tmpl">
+<div id="loadingMessage">
+    <div id="middle">
+            <span id="loadingText" style="padding-right:10px;">${WarehouseLocator.templateStrings.loadingMessage}...</span>
+            <span><img src="${WarehouseLocator.images.spinner}" id="spinner" style="display:inline;"/></span>
+    </div>
+</div>
+</script>
+
+<script id="warehouseListTemplate" type="text/x-jquery-tmpl">
+<table class="t13" cellspacing="0" cellpadding="0" id="warehouseTable" width="100%">
+
+{{if warehouses.length}}
+    <tbody id="warehouseDetails">
+
+{{each warehouses}}
+<tr>
+    {{if renderPushPin}}
+    <td>
+        <div class="pushpin">
+            ${$index + 1}
+        </div>
+    </td>
+    {{/if}}
+    <td>
+        <a href="#" class="warehouseName" onclick="window.location='${WarehouseLocator.getDetailsView(identifier, beginAddress, filterParams)}'">${locationName.toLowerCase()}</a>
+        {{if distance > 0}}		
+        <span style="padding-left:10px;">(${Math.round(distance*100)/100} ${WarehouseLocator.templateStrings.distanceMeasurement})<span>
+        {{/if}}
+        <div>${address1}</div>
+        <div>${city + ', ' + state + ' ' + zipCode}</div>
+        <div>${phone}</div>
+        <a href="#" class="navlink13Blue" onclick="window.location='${WarehouseLocator.getDetailsView(identifier, beginAddress, filterParams)}'">${WarehouseLocator.templateStrings.storeDetailsLink}</a>
+        | <a href="${WarehouseLocator.getDirectionsView($value, beginAddress)}" target="_blank" class="navlink13Blue">${WarehouseLocator.templateStrings.getDirectionsLink}</a>	
+    </td>
+    <td class="warehouseButtons">
+    {{if hasGasDepartment == true }}<img class="mapIcon" alt="Gas " title="${WarehouseLocator.templateStrings.gas}" src="${WarehouseLocator.icons.gas}"/>{{/if}}
+    {{if hasTiresDepartment == true }}<img class="mapIcon" alt="Tire Service Center" title="${WarehouseLocator.templateStrings.tires}" src="${WarehouseLocator.icons.tires}"/>{{/if}}
+    {{if hasFoodDepartment == true }}<img class="mapIcon" alt="Food Court" title="${WarehouseLocator.templateStrings.food}" src="${WarehouseLocator.icons.food}"/>{{/if}}
+    {{if hasHearingDepartment == true }}<img class="mapIcon" alt="Hearing Aids" title="${WarehouseLocator.templateStrings.hearing}" src="${WarehouseLocator.icons.hearing}"/>{{/if}}
+    {{if hasPharmacyDepartment == true }}<img class="mapIcon" alt="Pharmacy" title="${WarehouseLocator.templateStrings.pharmacy}" src="${WarehouseLocator.icons.pharmacy}"/>{{/if}}
+    {{if hasOpticalDepartment == true }}<img class="mapIcon" alt="Optical Department" title="${WarehouseLocator.templateStrings.optical}" src="${WarehouseLocator.icons.optical}"/>{{/if}}
+    </td>
+</tr>
+{{/each}}
+</tbody>
+{{else}}
+    <tr><td class="p10">${WarehouseLocator.templateStrings.noResultsFound}</td><td></td><td></td><td></td></tr>
+{{/if}}
+</table>
+</script>
+
+<script id="warehouseTiresListTemplate" type="text/x-jquery-tmpl">
+<form name="tireSelection" action="${WarehouseLocator.tiresCheckout.action}" method="POST">
+<input type="hidden" name="orderitemId" value=${WarehouseLocator.tiresCheckout.orderitemId} />
+<input type="hidden" name="fromPage" value=${WarehouseLocator.tiresCheckout.fromPage} />
+<input type="hidden" name="location" value=${WarehouseLocator.tiresCheckout.location} />
+<input type="hidden" name="catalogId" value=${WarehouseLocator.system.catalogId} />
+<input type="hidden" name="storeId" value=${WarehouseLocator.system.storeId} />
+<input type="hidden" name="langId" value=${WarehouseLocator.system.langId} />
+
+<table class="t13" cellspacing="0" cellpadding="0" id="Table1" width="100%" >
+{{if warehouses.length}}
+    <tbody id="Tbody1">
+
+{{each warehouses}}
+<tr>
+    {{if renderPushPin}}
+    <td>
+        <div class="pushpin">
+            ${$index + 1}
+        </div>
+    </td>
+    {{/if}}
+    <td>
+        <input type="radio" name="warehouseNumber" value="${identifier}"/>
+    </td>
+    <td>
+        <div><a href="#" class="navlink17Blue" onclick="window.location='${WarehouseLocator.getDetailsView(identifier, beginAddress, filterParams)}'">${city}</a>
+        {{if distance > 0}}		
+        <span style="padding-left:10px;">(${Math.round(distance*100)/100} ${WarehouseLocator.templateStrings.distanceMeasurement})<span>
+        {{/if}}
+        </div>
+        ${address1}<br>
+        ${city + ', ' + state + ' ' + zipCode}<br>
+        ${phone}<br>
+        <a href="${WarehouseLocator.getDirectionsView($value, beginAddress)}" target="_blank" class="navlink13Blue">${WarehouseLocator.templateStrings.getDirectionsLink}</a>	
+    </td>
+    <td class="warehouseButtons">
+    {{if hasGasDepartment == true }}<img class="mapIcon" alt="Gas " title="${WarehouseLocator.templateStrings.gas}" src="${WarehouseLocator.icons.gas}"/>{{/if}}
+    {{if hasTiresDepartment == true }}<img class="mapIcon" alt="Tire Service Center" title="${WarehouseLocator.templateStrings.tires}" src="${WarehouseLocator.icons.tires}"/>{{/if}}
+    {{if hasFoodDepartment == true }}<img class="mapIcon" alt="Food Court" title="${WarehouseLocator.templateStrings.food}" src="${WarehouseLocator.icons.food}"/>{{/if}}
+    {{if hasHearingDepartment == true }}<img class="mapIcon" alt="Hearing Aids" title="${WarehouseLocator.templateStrings.hearing}" src="${WarehouseLocator.icons.hearing}"/>{{/if}}
+    {{if hasPharmacyDepartment == true }}<img class="mapIcon" alt="Pharmacy" title="${WarehouseLocator.templateStrings.pharmacy}" src="${WarehouseLocator.icons.pharmacy}"/>{{/if}}
+    {{if hasOpticalDepartment == true }}<img class="mapIcon" alt="Optical Department" title="${WarehouseLocator.templateStrings.optical}" src="${WarehouseLocator.icons.optical}"/>{{/if}}
+    </td>
+</tr>
+{{/each}}
+<tr>
+<td colspan="4" class="continueWithTireSelection">
+    <button id="continueCheckout" class="submit costco-button" type="submit"><span class="s1"><span class="s2">${WarehouseLocator.templateStrings.checkout}</span></span></button>
+</td>
+</tr>
+</tbody>
+{{else}}
+    <tr><td class="p10">No Results Found</td><td></td><td></td><td></td></tr>
+{{/if}}
+</table>
+</form>
+</script>
+
+<script id="warehouseMapCustomIconsTemplate" type="text/x-jquery-tmpl">
+<div>
+            <div class="pushpin" id="location${counter}">
+                ${counter}
+            </div>
+</div>
+</script>
+
+<script id="VEShapeDescriptionTemplate" type="text/x-jquery-tmpl">
+<div>
+    <div><img class="mapIcon" alt="Costco" title="Costco" src="${WarehouseLocator.images.costcoPushPin}"/></div>
+    {{if warehouse.hasGasDepartment == true }}<img class="mapIcon" alt="Gas Station" title="${WarehouseLocator.templateStrings.gas}" src="${WarehouseLocator.icons.gas}"/>{{/if}}
+    {{if warehouse.hasTiresDepartment == true }}<img class="mapIcon" alt="Tire Service Center" title="${WarehouseLocator.templateStrings.tires}" src="${WarehouseLocator.icons.tires}"/>{{/if}}
+    {{if warehouse.hasFoodDepartment == true }}<img class="mapIcon" alt="Food Court" title="${WarehouseLocator.templateStrings.food}" src="${WarehouseLocator.icons.food}"/>{{/if}}
+    {{if warehouse.hasHearingDepartment == true }}<img class="mapIcon" alt="Hearing Aids" title="${WarehouseLocator.templateStrings.hearing}" src="${WarehouseLocator.icons.hearing}"/>{{/if}}
+    {{if warehouse.hasPharmacyDepartment == true }}<img class="mapIcon" alt="Pharmacy" title="${WarehouseLocator.templateStrings.pharmacy}" src="${WarehouseLocator.icons.pharmacy}"/>{{/if}}
+    {{if warehouse.hasOpticalDepartment == true }}<img class="mapIcon" alt="Optical Department" title="${WarehouseLocator.templateStrings.optical}" src="${WarehouseLocator.icons.optical}"/>{{/if}}
+
+    <div>${warehouse.city}</div>
+    <div>${warehouse.address1}</div>
+    <div>${warehouse.city + ', ' + warehouse.zipCode}</div>
+    <div>${warehouse.phone}</div>
+    <div style="padding-top:10px;">
+        <span><a href="#" class="navlink13Blue" onclick="window.location='${WarehouseLocator.getDetailsView(warehouse.identifier, beginAddress, filterParams)}'">${WarehouseLocator.templateStrings.storeDetailsLink}</a></span>
+        <span style="padding-left:10px;"><a href="${WarehouseLocator.getDirectionsView(warehouse, beginAddress)}" class="navlink13Blue" target="_blank">${WarehouseLocator.templateStrings.getDirectionsLink}</a></span>
+    </div>
+</div>
+</script>
+
+<script id="warehouseDirectionsTemplate" type="text/x-jquery-tmpl">
+<div>
+    <div style="font-weight:bold;margin-top:10px;margin-bottom:5px;">${WarehouseLocator.templateStrings.trip}: ${Math.round(route.Distance*100)/100} ${WarehouseLocator.templateStrings.uomAbbrev}., ${Math.ceil(route.Time/60)} ${WarehouseLocator.templateStrings.timeAbbrev}</div>
+    <table id="ItineraryTable" style="width:100%; border: 1px solid #bfbfbf;">
+    {{each route.RouteLegs}}
+        {{each $value.Itinerary.Items}}
+            {{if ($index % 2 == 1)}}
+            <td class="p10" style="font-size:13px;font-size:13px;background-color:#d6d6d6;padding:5px;">
+            {{else}}
+            <td class="p10" style="font-size:13px;font-size:13px;padding:5px;">
+            {{/if}}
+
+            {{if $index == 0}}
+                ${WarehouseLocator.templateStrings.start}: ${$value.Text}
+            {{else $index == Itinerary.Items.length - 1}}
+                ${WarehouseLocator.templateStrings.end}: ${$value.Text}
+            {{else}}
+                ${$value.Text}
+            {{/if}}
+            </td>
+            
+            {{if ($index % 2 == 1)}}
+            <td class="p10" style="font-size:13px; text-align:right;background-color:#d6d6d6;padding:5px;">
+            {{else}}
+            <td class="p10" style="font-size:13px; text-align:right;padding:5px;">
+            {{/if}}
+            ${Math.round($value.Distance*100)/100} ${WarehouseLocator.templateStrings.uomAbbrev}.</td>
+        </tr>
+        {{/each}}
+    {{/each}}
+    </table>
+</div>
+</script>
+
+<script type="text/javascript">
+    // <![CDATA[
+    WarehouseLocator.getDetailsView = function (warehouseNumber, beginAddress, filterParams) {
+        var detailsView = WarehouseLocator.views.details.replace("{WAREHOUSE_NUMBER}", warehouseNumber);
+        detailsView = detailsView.replace("{BEGINADDRESS}", encodeURIComponent(beginAddress));
+        detailsView += filterParams.hasGas ? "&hasGas=true" : "";
+        detailsView += filterParams.hasFood ? "&hasFood=true" : "";
+        detailsView += filterParams.hasPharmacy ? "&hasPharmacy=true" : "";
+        detailsView += filterParams.hasTires ? "&hasTires=true" : "";
+        detailsView += filterParams.hasHearing ? "&hasHearing=true" : "";
+        detailsView += filterParams.hasOptical ? "&hasOptical=true" : "";
+        detailsView += "&numOfWarehousesToReturn=" + filterParams.numOfWarehousesToReturn;
+        detailsView += "&location=" + encodeURIComponent(filterParams.location);
+        detailsView += "&callingPage=" + filterParams.callingPage;
+
+        return detailsView;
+    }
+
+    WarehouseLocator.getDirectionsView = function (warehouse, beginAddress) {
+        var output = WarehouseLocator.views.directions.replace("{WAREHOUSE_NUMBER}", warehouse.identifier);
+        output = output.replace("{WAREHOUSE_LATITUDE}", warehouse.latitude);
+        output = output.replace("{WAREHOUSE_LONGITUDE}", warehouse.longitude);
+        output = output.replace("{BEGINADDRESS}", encodeURIComponent(beginAddress));
+        output = output.replace("{ENDADDRESS}", encodeURIComponent(warehouse.address1 + ", " + warehouse.city + ", " + warehouse.state + ", " + warehouse.zipCode));
+
+        return output;
+    }
+    // ]]>
+</script>
+
+<script type="text/javascript">
+    var _warehouseLocator;
+    var selectedValue = "10002"
+    var _canada = "CA";
+    currentCountryCode = "US";
+
+    if (currentCountryCode == _canada) {
+        selectedValue = "10001";
+    }
+
+    $(document).ready(function () {
+
+        $(".statePanel").each(function () {
+            $(this).hide()
+        });
+
+        var countrySelector = $("#selectCountry");
+
+        countrySelector.change(function () {
+
+            $(".statePanel").each(function () {
+                $(this).hide()
+            });
+
+            displayStateProv($(this).attr('value'));
+
+        });
+
+        $("#executeSearchForWarehouses").click(function () {
+            findByCountryStateProv();
+        });
+
+        $("#redirectToWarehouseLocator").click(function () {
+            var url = "WarehouseLocatorView?storeId=10301&catalogId=10701&langId=-1";
+            window.location = url;
+        });
+
+        countrySelector.val(selectedValue);
+        countrySelector.change();
+
+        _warehouseLocator = new WarehouseLocator();
+        //CIS100069481 : Initializing the mapToken
+        _warehouseLocator.initialize(mapToken, "WarehouseLocatorBrowseView", 'warehouseMap', $('#warehouseListContainer'));
+    });
+
+    function displayStateProv(countryID) {
+        $("#StateProvincePanel_" + countryID).toggle();
+    }
+
+    function findByCountryStateProv() {
+        var countryGeoNode = $("#selectCountry").val();
+        var selectedStateProvGeoNode = $("#stateProvSelect_" + countryGeoNode).val();
+        _warehouseLocator.findByCountryStateProv(selectedStateProvGeoNode);
+    }
+
+</script>
+
+
+
+</body>
+</html>
